@@ -2,6 +2,25 @@
 
 <img alt="Paydunk" src="http://paydunk.com/wp-content/themes/paydunk/images/footr_logo.png" />
 
-Request API access and register applications at https://developers.paydunk.com. Check in the Applications tab to view all of your apps. You'll see each of your apps are given an App ID and App Secret.
+Download the front-end plugin (found here: https://github.com/paydunk/front-end-plugin/blob/master/jquery.paydunk.js) and use the following files to get started quickly with Paydunk & Authorize.net! 
 
-Along with the front-end plugin (found here: https://github.com/paydunk/front-end-plugin), use these files to get started quickly with Paydunk & Authorize.net!
+### index.php
+
+Update this file with your paydunk App ID and price (order total). Request API access and register applications at https://developers.paydunk.com. Check in the Applications tab to view all of your apps. You'll see each of your apps are given an App ID and App Secret.
+
+### test.php
+
+Update this file with:
+
+* Info from your order database if necessary (lines 12-17)
+* Your authorize.net API Login ID & Transaction Key (line 20)
+* Starting at line 90, you may need to update the code depensing on the order status (i.e., check the payment status and update your order database accordingly) 
+* Your Paydunk App ID and App Secret (lines 155 & 156)
+
+### thankyou.php
+
+Sample thank you page. Specify the link to your thankyou page when you register a new application at https://developers.paydunk.com.
+
+### AuthorizeNet.php
+
+The Authorize.net SDK. There is no need to make any changes to this file.
