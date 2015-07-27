@@ -1,7 +1,6 @@
 <?php
-/*
-Paydunk Authorize.net Integration
-*/
+
+//Paydunk Authorize.net Integration
 
 $status = 'error';
 
