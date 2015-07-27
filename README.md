@@ -19,7 +19,7 @@ Update this file with:
 
 ### thankyou.php
 
-Sample thank you page. Specify the link to your than kyou page when you register a new application at https://developers.paydunk.com.
+Sample thank you page which the user is redirected to if the payment was successful. Specify the link to your thank you page when you register a new application at https://developers.paydunk.com.
 
 ### AuthorizeNet.php
 
