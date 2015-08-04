@@ -1,6 +1,6 @@
 <?php
 
-//Paydunk Authorize.net Integration
+// Paydunk Authorize.net Integration
 
 $status = 'error';
 
@@ -30,22 +30,24 @@ try
 	$transaction_uuid = $_POST["transaction_uuid"];
 	$order_number = $_POST["order_number"];
 	
-	if(isset($_POST["billing_name"])) {
-	  $business_name = $_POST["billing_name"];
-	  $business_names = explode(' ', $business_name);
-	  $business_firstname = $business_names[0];
-	  $business_lastname = $business_names[1];
+	if(isset($_POST["billing_first_name"])) {
+	  $business_firstname = $_POST["billing_first_name"];
 	} else {
 	$business_firstname = 'na'; //authorize.net needs a default value
+	}
+	if(isset($_POST["billing_last_name"])) {
+	  $business_lastname = $_POST["billing_last_name"];
+	} else {
 	$business_lastname = 'na'; //authorize.net needs a default value
 	}
-	if(isset($_POST["shipping_name"])) {
-	  $shipping_name = $_POST["shipping_name"]; 
-	  $shipping_names = explode(' ', $shipping_name);
-	  $shipping_firstname = $shipping_names[0];
-	  $shipping_lastname = $shipping_names[1];
+	if(isset($_POST["shipping_first_name"])) {
+	  $shipping_firstname = $_POST["shipping_first_name"];
 	} else {
 	$shipping_firstname = 'na'; //authorize.net needs a default value
+	}
+	if(isset($_POST["shipping_last_name"])) {
+	  $shipping_lastname = $_POST["shipping_last_name"];
+	} else {
 	$shipping_lastname = 'na'; //authorize.net needs a default value
 	}
 	if(isset($_POST["billing_phone"])) { $business_telephone = $_POST["billing_phone"]; } 
