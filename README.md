@@ -14,8 +14,8 @@ Update this file with:
 
 * info from your order database if necessary (lines 12-17)
 * your authorize.net API Login ID & Transaction Key (line 20)
-* your custom code depending on the order status i.e., check the payment status and update your order database accordingly (starting on line 89) 
-* your Paydunk App ID and App Secret (lines 155 & 156)
+* your custom code depending on the order status i.e., check the payment status and update your order database accordingly (starting on line 91) 
+* your Paydunk App ID and App Secret (lines 156 & 157)
 
 ### thankyou.php
 
